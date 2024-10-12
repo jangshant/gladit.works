@@ -1,109 +1,51 @@
-@charset "UTF-8";
-/* Custom CSS Variables */
-:root {
-  --bs-blue: #0d6efd;
-  --bs-white: #fff;
-  --bs-gray: #6c757d;
-  --bs-dark: #212529;
-  --bs-primary: #0d6efd;
-}
-
-/* General styling */
+/* Core Theme CSS */
 body {
-  margin: 0;
-  font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
-  font-size: 1rem;
-  color: #212529;
-  background-color: #fff;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #fff;
+    color: #212529;
 }
 
 .masthead {
-  background: #343a40;
-  color: white;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+    height: 100vh;
+    background-color: #343a40;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-h1 {
-  font-size: calc(1.375rem + 1.5vw);
-  font-weight: 700;
-}
-
-p {
-  font-size: 1.25rem;
-}
-
-.btn-primary {
-  background-color: var(--bs-blue);
-  border-color: var(--bs-blue);
-  color: var(--bs-white);
-  padding: 10px 20px;
-  border-radius: 5px;
-}
-
-.bg-light {
-  background-color: #f8f9fa !important;
-}
-
-.bg-dark {
-  background-color: #212529 !important;
-}
-
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 15px;
-}
-
-.navbar {
-  background-color: #f8f9fa;
-}
-
-.navbar-brand {
-  color: var(--bs-dark);
-}
-
-.nav-link {
-  color: var(--bs-gray);
-  padding: 15px;
+.navbar-brand, .nav-link {
+    color: #343a40;
 }
 
 .nav-link:hover {
-  color: var(--bs-blue);
+    color: #0d6efd;
 }
 
-/* About Section */
-#about {
-  padding: 60px 0;
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
 }
 
-/* Services Section */
-#services {
-  padding: 60px 0;
+.bg-light {
+    background-color: #f8f9fa !important;
 }
 
-.service-item h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
+.bg-dark {
+    background-color: #212529 !important;
 }
 
-/* Contact Section */
-#contact {
-  padding: 60px 0;
-}
-
-.form-control {
-  padding: 0.75rem 1rem;
-  border-radius: 0.25rem;
-  border: 1px solid #ced4da;
-  margin-bottom: 15px;
+/* Custom Styles */
+h1, h2, h3 {
+    margin-bottom: 1.5rem;
 }
 
 footer {
-  background-color: var(--bs-dark);
-  color: var(--bs-white);
-  padding: 20px 0;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1140px;
 }
