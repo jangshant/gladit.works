@@ -81,10 +81,12 @@
         <section id="contact" class="py-5 text-center bg-light">
             <div class="container">
                 <h2>Contact Us</h2>
-                <form>
-                    <input type="text" placeholder="Your Name" class="form-control mb-3" required>
-                    <input type="email" placeholder="Your Email" class="form-control mb-3" required>
-                    <textarea placeholder="Your Message" class="form-control mb-3" required></textarea>
+                <form action="https://formspree.io/f/mgveevlo" method="POST">
+                    <input type="text" placeholder="Your Name" class="form-control mb-3" name="name" required>
+                    <input type="email" placeholder="Your Email" class="form-control mb-3" name="email" required>
+                    <textarea placeholder="Your Message" class="form-control mb-3" name="message" required></textarea>
+                    <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+                    <input type="text" name="_gotcha" style="display:none">
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
