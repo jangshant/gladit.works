@@ -10,6 +10,4 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
         });
     });
-
-    // Additional JS can be added here for form handling, dynamic content, etc.
 });
