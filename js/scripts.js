@@ -1,5 +1,6 @@
-// Simple JavaScript for interactivity
+// Simple JavaScript for smooth scrolling and basic interactivity
 document.addEventListener('DOMContentLoaded', function () {
+    // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('nav ul li a');
 
     navLinks.forEach(link => {
@@ -9,5 +10,6 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
         });
     });
+
+    // Additional JS can be added here for form handling, dynamic content, etc.
 });
-/*!
