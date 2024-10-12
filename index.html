@@ -6,52 +6,49 @@
         <meta name="description" content="Glad IT Works - IT Solutions" />
         <meta name="author" content="Glad IT Works" />
         <title>Glad IT Works - Your IT Solutions Partner</title>
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
+        <!-- Bootstrap CSS (Main framework) -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap Icons -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Google fonts-->
+        <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
+        <!-- Core theme CSS -->
         <link href="css/styles.css" rel="stylesheet" />
         <!-- Custom CSS for additional styles -->
         <link href="css/custom.css" rel="stylesheet" />
         <script defer src="scripts.js"></script> <!-- External JS -->
     </head>
     <body>
-        <!-- Navigation-->
-        <nav class="navbar navbar-light bg-light static-top">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#home">Glad IT Works!</a>
-                <ul class="nav">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
         <!-- Hero Section (Masthead) -->
-        <header id="home" class="masthead">
+        <header id="home" class="masthead d-flex align-items-center text-center text-white">
             <div class="container position-relative">
-                <div class="row justify-content-center">
-                    <div class="col-xl-6">
-                        <div class="text-center text-white">
-                            <!-- Page heading-->
-                            <h1 class="mb-5">SITE UNDER CONSTRUCTION</h1>
-                            <h1 class="mb-5">Get in touch with <br>Glad IT Works<br> to get your IT needs moving!</h1>
-                            <h1 class="mb-5"><a href="mailto:info@gladit.works">info@gladit.works</a></h1>
-                            <a href="#about" class="btn btn-primary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
+                <h2 class="mb-5">Get in touch with <br>Glad IT Works<br> to get your IT needs moving!</h2>
+                <h3 class="mb-5"><a href="mailto:info@gladit.works" class="text-white">info@gladit.works</a></h3>
+                <a href="#about" class="btn btn-primary">Learn More</a>
             </div>
         </header>
 
         <!-- About Section -->
-        <section id="about" class="py-5 text-center bg-light">
+        <section id="about" class="py-5 bg-light text-center">
             <div class="container">
                 <h2>About Us</h2>
                 <p class="lead">Glad IT Works specializes in delivering top-notch IT solutions. Whether you're a startup or a large enterprise, we’ve got the solutions you need.</p>
@@ -80,13 +77,19 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="py-5 text-center bg-light">
+        <section id="contact" class="py-5 bg-light text-center">
             <div class="container">
                 <h2>Contact Us</h2>
                 <form action="https://formspree.io/f/mgveevlo" method="POST">
-                    <input type="text" placeholder="Your Name" class="form-control mb-3" name="name" required>
-                    <input type="email" placeholder="Your Email" class="form-control mb-3" name="email" required>
-                    <textarea placeholder="Your Message" class="form-control mb-3" name="message" required></textarea>
+                    <div class="mb-3">
+                        <input type="text" placeholder="Your Name" class="form-control" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" placeholder="Your Email" class="form-control" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea placeholder="Your Message" class="form-control" name="message" required></textarea>
+                    </div>
                     <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
                     <input type="text" name="_gotcha" style="display:none">
                     <button type="submit" class="btn btn-primary">Send Message</button>
@@ -101,7 +104,7 @@
             </div>
         </footer>
 
-        <!-- Bootstrap core JS -->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <!-- Bootstrap JS and dependencies -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
