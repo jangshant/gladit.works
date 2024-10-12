@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Glad IT Works!</title>
+        <meta name="description" content="Glad IT Works - IT Solutions" />
+        <meta name="author" content="Glad IT Works" />
+        <title>Glad IT Works - Your IT Solutions Partner</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -14,16 +14,25 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Custom CSS for additional styles -->
+        <link href="css/custom.css" rel="stylesheet" />
+        <script defer src="scripts.js"></script> <!-- External JS -->
     </head>
     <body>
         <!-- Navigation-->
         <nav class="navbar navbar-light bg-light static-top">
             <div class="container">
-                <a class="navbar-brand" href="#!">Glad IT Works!</a>
+                <a class="navbar-brand" href="#home">Glad IT Works!</a>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
             </div>
         </nav>
-        <!-- Masthead-->
-        <header class="masthead">
+
+        <!-- Hero Section (Masthead) -->
+        <header id="home" class="masthead">
             <div class="container position-relative">
                 <div class="row justify-content-center">
                     <div class="col-xl-6">
@@ -32,11 +41,63 @@
                             <h1 class="mb-5">SITE UNDER CONSTRUCTION</h1>
                             <h1 class="mb-5">Get in touch with <br>Glad IT Works<br> to get your IT needs moving!</h1>
                             <h1 class="mb-5"><a href="mailto:info@gladit.works">info@gladit.works</a></h1>
+                            <a href="#about" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
+
+        <!-- About Section -->
+        <section id="about" class="py-5 text-center bg-light">
+            <div class="container">
+                <h2>About Us</h2>
+                <p class="lead">Glad IT Works specializes in delivering top-notch IT solutions. Whether you're a startup or a large enterprise, we’ve got the solutions you need.</p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-5 text-center">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h3>Consulting</h3>
+                        <p>We offer expert IT consulting services to help you achieve your business goals.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3>Cloud Solutions</h3>
+                        <p>Secure, scalable cloud solutions that meet your business needs.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3>Support</h3>
+                        <p>24/7 IT support to ensure your systems run smoothly and efficiently.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-5 text-center bg-light">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form>
+                    <input type="text" placeholder="Your Name" class="form-control mb-3" required>
+                    <input type="email" placeholder="Your Email" class="form-control mb-3" required>
+                    <textarea placeholder="Your Message" class="form-control mb-3" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white text-center py-3">
+            <div class="container">
+                <p>&copy; 2024 Glad IT Works. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS -->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
