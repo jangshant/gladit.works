@@ -44,3 +44,35 @@
     justify-content: space-between;
     height: 100%;
 }
+
+/* Responsive h3 styles */
+.service-box h3 {
+    font-size: 1.5rem; /* Use rem units for scalability */
+    margin: 0.5em 0;
+    word-wrap: break-word; /* Ensure long words break to fit within the container */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .service-box h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .service-box h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-box h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .service-box h3 {
+        font-size: 1.1rem;
+    }
+}
