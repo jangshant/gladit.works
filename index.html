@@ -55,7 +55,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
@@ -83,22 +83,26 @@
     <section id="services" class="py-5 text-center">
         <div class="container">
             <h2>Our Services</h2>
-            <div class="row">
-                <div class="col-lg-3">
+            <div class="row justify-content-center">
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
                     <h3>Consulting</h3>
                     <p>We offer expert IT consulting services to help you achieve your business goals.</p>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
                     <h3>Project Management</h3>
                     <p>Meet your business needs for IT projects with our expert team.</p>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
                     <h3>After Hour Support</h3>
                     <p>Glad IT Works Inc. provides after hours IT support to ensure your systems run smoothly and efficiently in emergencies and when no one is there.</p>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
                     <h3>IT Recruitment</h3>
                     <p>We provide specialized IT recruitment services to help you find the right talent for your organization.</p>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <h3>IT Contracting</h3>
+                    <p>Our IT contracting services offer flexible solutions to meet your temporary or project-based IT needs.</p>
                 </div>
             </div>
         </div>
@@ -153,6 +157,32 @@
                 backToTopButton.style.display = 'none';
             }
         });
+
+        // Highlight active section in navbar
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.6
+        };
+
+        const observerCallback = (entries, observer) => {
+            entries.forEach(entry => {
+                const sectionId = entry.target.getAttribute('id');
+                const navLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
+
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => link.classList.remove('active'));
+                    navLink.classList.add('active');
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+        sections.forEach(section => observer.observe(section));
     </script>
 </body>
 </html>
