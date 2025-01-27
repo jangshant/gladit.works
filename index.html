@@ -1,113 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Glad IT Works - IT Solutions" />
-        <meta name="author" content="Glad IT Works" />
-        <title>Glad IT Works - Your IT Solutions Partner</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap CSS (Main framework) -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Bootstrap Icons -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" />
-        <!-- Core theme CSS -->
-        <link href="css/styles.css" rel="stylesheet" />
-        <!-- Custom CSS for additional styles -->
-        <link href="css/custom.css" rel="stylesheet" />
-        <script defer src="scripts.js"></script> <!-- External JS -->
-    </head>
-    <body>
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#home">Glad IT Works!</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Glad IT Works - IT Solutions" />
+    <meta name="author" content="Glad IT Works" />
+    <title>Glad IT Works - Your IT Solutions Partner</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap CSS (Main framework) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" />
+    <!-- Core theme CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- Custom CSS for additional styles -->
+    <link href="css/custom.css" rel="stylesheet" />
+    <script defer src="scripts.js"></script> <!-- External JS -->
+    <style>
+        /* Custom styles */
+        .masthead {
+            background: url('assets/hero-bg.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        .navbar.sticky-top {
+            position: sticky;
+            top: 0;
+            z-index: 1020;
+        }
+        .nav-link.active {
+            font-weight: bold;
+            color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Glad IT Works!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Masthead) -->
+    <header id="home" class="masthead d-flex align-items-center text-center text-white">
+        <div class="container position-relative">
+            <h2 class="mb-3">Get in touch with <br>Glad IT Works<br> to get your IT needs moving!</h2>
+            <a href="#about" class="btn btn-primary">Learn More</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light text-center">
+        <div class="container">
+            <h2>About Us</h2>
+            <p class="lead">Glad IT Works specializes in delivering top-notch IT solutions. Whether you're a startup or a large enterprise, we’ve got the solutions you need.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 text-center">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="row">
+                <div class="col-lg-3">
+                    <h3>Consulting</h3>
+                    <p>We offer expert IT consulting services to help you achieve your business goals.</p>
+                </div>
+                <div class="col-lg-3">
+                    <h3>Project Management</h3>
+                    <p>Meet your business needs for IT projects with our expert team.</p>
+                </div>
+                <div class="col-lg-3">
+                    <h3>After Hour Support</h3>
+                    <p>Glad IT Works Inc. provides after hours IT support to ensure your systems run smoothly and efficiently in emergencies and when no one is there.</p>
+                </div>
+                <div class="col-lg-3">
+                    <h3>IT Recruitment</h3>
+                    <p>We provide specialized IT recruitment services to help you find the right talent for your organization.</p>
                 </div>
             </div>
-        </nav>
+        </div>
+    </section>
 
-<!-- Hero Section (Masthead) -->
-<header id="home" class="masthead d-flex align-items-center text-center text-white">
-    <div class="container position-relative">
-        <h2 class="mb-3">Get in touch with <br>Glad IT Works<br> to get your IT needs moving!</h2>
-        <a href="#about" class="btn btn-primary">Learn More</a>
-    </div>
-</header>
-        <!-- About Section -->
-        <section id="about" class="py-5 bg-light text-center">
-            <div class="container">
-                <h2>About Us</h2>
-                <p class="lead">Glad IT Works specializes in delivering top-notch IT solutions. Whether you're a startup or a large enterprise, we’ve got the solutions you need.</p>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" class="py-5 text-center">
-            <div class="container">
-                <h2>Our Services</h2>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <h3>Consulting</h3>
-                        <p>We offer expert IT consulting services to help you achieve your business goals.</p>
-                    </div>
-                    <div class="col-lg-4">
-                        <h3>Project Management</h3>
-                        <p> Meet your business needs for IT projects with our expert team.</p>
-                    </div>
-                    <div class="col-lg-4">
-                        <h3>After Hour Support</h3>
-                        <p>Glad IT Works Inc. provides after hours IT support to ensure your systems run smoothly and efficiently in emergencies and when no one is there.</p>
-                    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light text-center">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="https://formspree.io/f/mgveevlo" method="POST">
+                <div class="mb-3">
+                    <input type="text" placeholder="Your Name" class="form-control" name="name" required>
                 </div>
-            </div>
-        </section>
+                <div class="mb-3">
+                    <input type="email" placeholder="Your Email" class="form-control" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <textarea placeholder="Your Message" class="form-control" name="message" required></textarea>
+                </div>
+                <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+                <input type="text" name="_gotcha" style="display:none">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="py-5 bg-light text-center">
-            <div class="container">
-                <h2>Contact Us</h2>
-                <form action="https://formspree.io/f/mgveevlo" method="POST">
-                    <div class="mb-3">
-                        <input type="text" placeholder="Your Name" class="form-control" name="name" required>
-                    </div>
-                    <div class="mb-3">
-                        <input type="email" placeholder="Your Email" class="form-control" name="email" required>
-                    </div>
-                    <div class="mb-3">
-                        <textarea placeholder="Your Message" class="form-control" name="message" required></textarea>
-                    </div>
-                    <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
-                    <input type="text" name="_gotcha" style="display:none">
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-        </section>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2025 Glad IT Works Inc. All rights reserved.</p>
+            <p>
+                <a href="mailto:info@gladit.works" class="text-white">info@gladit.works</a> | 
+                <a href="tel:+15198047202" class="text-white">+1 (519) 804-7202</a>
+            </p>
+        </div>
+    </footer>
 
-<!-- Footer -->
-<footer class="bg-dark text-white text-center py-3">
-    <div class="container">
-        <p>&copy; 2024 Glad IT Works Inc. All rights reserved.</p>
-        <p>
-            <a href="mailto:info@gladit.works" class="text-white">info@gladit.works</a> | 
-            <a href="tel:+15198047202" class="text-white">+1 (519) 804-7202</a>
-        </p>
-    </div>
-</footer>
+    <!-- Back to Top Button -->
+    <button class="btn btn-primary back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+        <i class="bi bi-arrow-up"></i>
+    </button>
 
-
-        <!-- Bootstrap JS and dependencies -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Show back-to-top button when scrolling down
+        window.addEventListener('scroll', function() {
+            const backToTopButton = document.querySelector('.back-to-top');
+            if (window.scrollY > 100) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+    </script>
+</body>
 </html>
